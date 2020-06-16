@@ -10,8 +10,13 @@ public class Palindrome {
         return true;
     }
     public static void main(String[] args) {
-        System.out.printf("%s - %s\n", "level", isPalindrome("level") );
-        System.out.printf("%s - %s\n", "eye", isPalindrome("eye") );
-        System.out.printf("%s - %s\n", "word", isPalindrome("word") );
-}
+        for (int i = 0; i < args.length; i++) {
+            if(isPalindrome(args[i])) {
+              System.out.printf("%s - %s\n", args[i], "палиндром");
+            } 
+            else {
+              System.out.printf("%s - %s\n", args[i], "не палиндром");
+            }
+        }
+    }
 }
