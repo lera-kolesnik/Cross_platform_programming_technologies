@@ -28,10 +28,5 @@ public class Lab1 {
         System.out.println("Введите точку c");
         Point3d cPoint = new Point3d(in.nextDouble(), in.nextDouble(), in.nextDouble());
         System.out.println(computeArea(aPoint, bPoint, cPoint));
-
-        // Point3d a = new Point3d(1, 2, 1);
-        // Point3d b = new Point3d(8, 7, 9);
-        // Point3d c = new Point3d(2, 3, 4);
-        // System.out.println(computeArea(a, b, c));
     }
 }
