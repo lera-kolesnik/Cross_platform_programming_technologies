@@ -1,3 +1,4 @@
+package lab_3;
 /**
  * This class represents a simple two-dimensional map composed of square cells.
  * Each cell specifies the cost of traversing that cell.

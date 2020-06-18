@@ -1,3 +1,4 @@
+package lab_3;
 import java.util.HashMap;
 /**
  * This class stores the basic state necessary for the A* algorithm to compute a
