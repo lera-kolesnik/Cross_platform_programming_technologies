@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class JImageDisplay extends JComponent{
-    private BufferedImage image;
+    public BufferedImage image;
     public JImageDisplay(int width, int heigth){
         image = new BufferedImage(width, heigth,BufferedImage.TYPE_INT_RGB);
         Dimension dimension = new Dimension(width, heigth);
@@ -12,7 +12,7 @@ public class JImageDisplay extends JComponent{
     }
     @Override
     public void paintComponent(Graphics g){
-        g.drawImage(image, 0, 0,  image.getWidth(), image.getHeight(), null);
+        g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
     }
     public void clearImage(){
         for(int i = 0; i < image.getHeight(); i++){
@@ -23,6 +23,9 @@ public class JImageDisplay extends JComponent{
 }
     public void drawPixel(int x, int y, int rgbColor){
         image.setRGB(x, y, rgbColor);
+    }
+    public BufferedImage getBufferedImage(){
+        return image;
     }
 }
 
