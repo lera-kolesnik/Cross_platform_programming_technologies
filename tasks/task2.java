@@ -1,4 +1,4 @@
-package task_1;
+package tasks;
 
 public class task2{
 public static String repeat(String str, int count) {
