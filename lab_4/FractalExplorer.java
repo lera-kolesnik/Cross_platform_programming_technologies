@@ -100,7 +100,6 @@ public class FractalExplorer {
         }
     }
     
-
     public class MouseHandler extends MouseAdapter{
         @Override
         public void mouseClicked(MouseEvent e){
@@ -114,25 +113,6 @@ public class FractalExplorer {
             }
         }
     }
-
-    // public void drawFractal(){
-    //     for(int x = 0; x < displaySize; x++){
-    //         for (int y = 0; y < displaySize; y++){
-    //             int numIt = fGenerator.numIterations(FractalGenerator.getCoord(
-    //                 planeRange.x, planeRange.x + planeRange.width, displaySize, x),
-    //                 FractalGenerator.getCoord(planeRange.y, planeRange.y + 
-    //                 planeRange.width, displaySize, y));
-    //                 if (numIt == -1)
-    //                     image.drawPixel(x, y, 0);
-    //                 else{
-    //                     double hue = 0.7f + (float)numIt / 200f;
-    //                     int rgbColor = Color.HSBtoRGB((float)hue, 0.8f, 0.8f); 
-    //                     image.drawPixel(x, y, rgbColor);
-    //                 }
-    //             }
-    //         }
-    //         image.repaint();
-    //     }
 
          public void drawFractal(){
             //  enableUI(false);
